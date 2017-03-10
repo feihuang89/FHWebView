@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 WKWebView下代理协议实现OC与JS交互，自定义网页加载进度条，京东、天猫、淘宝拦截跳转，并解决那些WKWebView中的坑！
                        DESC
 
-  s.homepage         = 'https://github.com/zenghongfei/FHWebView'
+  s.homepage         = 'https://github.com/feihuang89/FHWebView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zenghongfei' => 'zenghongfei@picooc.com' }
-  s.source           = { :git => 'https://github.com/zenghongfei/FHWebView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/feihuang89/FHWebView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

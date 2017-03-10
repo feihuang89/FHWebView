@@ -278,7 +278,7 @@
 {
     NSLog(@"加载失败error:%@",error);
     
-    if ([self.delegate respondsToSelector:@selector(webViewDidFail:withError:)]) {
+    if ([self.delegate respondsToSelector:@selector(webView:didFailLoadWithError:)]) {
         [self.delegate webView:webView didFailLoadWithError:error];
     }
 }
@@ -314,7 +314,7 @@
 -(void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error
 {
     NSLog(@"error:%@",error);
-    if ([self.delegate respondsToSelector:@selector(webViewDidFail:withError:)]) {
+    if ([self.delegate respondsToSelector:@selector(webView:didFailLoadWithError:)]) {
         [self.delegate webView:webView didFailLoadWithError:error];
     }
 }
