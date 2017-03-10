@@ -7,8 +7,10 @@
 //
 
 #import "FHViewController.h"
+#import "UIWebViewController.h"
+#import "WKWebViewController.h"
 
-@interface FHViewController ()
+@interface FHViewController ()<UIWebViewDelegate>
 
 @end
 
@@ -17,7 +19,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)wkWebViewClick:(id)sender {
+    
+    WKWebViewController *wkVC = [[WKWebViewController alloc] init];
+    [self.navigationController pushViewController:wkVC animated:YES];
+}
+
+- (IBAction)uiWebViewClick:(id)sender {
+    UIWebViewController *uiVC = [[UIWebViewController alloc] init];
+    [self.navigationController pushViewController:uiVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

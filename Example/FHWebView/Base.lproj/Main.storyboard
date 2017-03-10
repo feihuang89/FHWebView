@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="27R-9q-Fnu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="WAr-wp-izq">
+            <objects>
+                <navigationController id="27R-9q-Fnu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TVY-pi-JlG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="gGN-rw-z3P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xii-jJ-rde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1135" y="-45"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="wQg-tq-qST">
             <objects>
@@ -14,14 +35,47 @@
                         <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoO-TH-bWT">
+                                <rect key="frame" x="111" y="320" width="153" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.6033262526008879" blue="0.53726052483915732" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="C25-Dz-4R5"/>
+                                    <constraint firstAttribute="height" constant="50" id="qIN-tl-blN"/>
+                                </constraints>
+                                <state key="normal" title="UIWebView"/>
+                                <connections>
+                                    <action selector="uiWebViewClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="ohT-7z-e8Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYE-Tc-K4N">
+                                <rect key="frame" x="111" y="244" width="153" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.6033262526008879" blue="0.53726052483915732" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hON-5w-Xdw"/>
+                                </constraints>
+                                <state key="normal" title="WKWebView"/>
+                                <connections>
+                                    <action selector="wkWebViewClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="wJd-7T-kNC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hoO-TH-bWT" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="Bra-gw-njH"/>
+                            <constraint firstItem="hoO-TH-bWT" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="topMargin" constant="320" id="Fvi-4t-Uaz"/>
+                            <constraint firstItem="iYE-Tc-K4N" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="180" id="JKu-33-lOW"/>
+                            <constraint firstItem="iYE-Tc-K4N" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="RmU-jU-5Xi"/>
+                            <constraint firstItem="iYE-Tc-K4N" firstAttribute="width" secondItem="hoO-TH-bWT" secondAttribute="width" id="wqK-2O-wiF"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8pg-o9-5z4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="-289" y="-45"/>
         </scene>
     </scenes>
 </document>

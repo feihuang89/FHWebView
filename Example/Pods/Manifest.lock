@@ -1,0 +1,16 @@
+PODS:
+  - FHWebView (0.1.0)
+
+DEPENDENCIES:
+  - FHWebView (from `../`)
+
+EXTERNAL SOURCES:
+  FHWebView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FHWebView: 86fffce17a978a8c05e557df99624d81fdcb8698
+
+PODFILE CHECKSUM: 266dc1341f5973ed60ad83f21865a68a2e684522
+
+COCOAPODS: 1.2.0
