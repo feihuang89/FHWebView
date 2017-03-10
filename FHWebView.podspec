@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FHWebView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FHWebView.'
+  s.summary          = 'iOS8以上切换WKWebView框架,轻易实现OC与JS交互,一句代码集成浏览器！'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+WKWebView下代理协议实现OC与JS交互，自定义网页加载进度条，京东、天猫、淘宝拦截跳转，并解决那些WKWebView中的坑！
                        DESC
 
   s.homepage         = 'https://github.com/zenghongfei/FHWebView'
