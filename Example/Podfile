@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FHWebView_Example' do
+  pod 'FHWebView', :path => '../'
+
+  target 'FHWebView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
