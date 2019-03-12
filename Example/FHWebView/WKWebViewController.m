@@ -59,6 +59,8 @@
 //    self.webManager.addWKNavigationTypeOther = NO;
     
     [self sendRequest];
+    
+    //测试
 }
 
 -(void)sendRequest
